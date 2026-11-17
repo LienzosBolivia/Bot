@@ -551,3 +551,6 @@ def main(output_dir):
     print(sim[cfg].sub(sim[cfg[0]], axis=0).abs().max())
     diagnostico_cash_and_carry(df_dev).to_csv(output_dir/'carry_dev.csv')
     auditar_penalizacion_dsr(df_dev).to_csv(output_dir/'diag_dsr.csv')
+
+    from diagnostics_v2 import run as run_v2
+    run_v2(df_dev, output_dir)
