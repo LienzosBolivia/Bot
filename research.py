@@ -554,3 +554,6 @@ def main(output_dir):
 
     from diagnostics_v2 import run as run_v2
     run_v2(df_dev, output_dir)
+
+    from diagnostics_v3 import run as run_v3
+    run_v3(df_dev, output_dir)
